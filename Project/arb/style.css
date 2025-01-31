@@ -1,0 +1,44 @@
+
+.container{
+    display: 
+}
+
+body{
+    background-color: aqua;
+}
+.lin{
+    color: chartreuse;
+}
+.text{
+    font-size: 5rem;
+    letter-spacing: 10px;
+    font-family: monospace;
+    
+    border-right: 5px solid;
+    width: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(3),
+    cursor .4s step-end infinite alternate;
+}
+
+.text1{
+    font-size: 5rem;
+    color:blue;
+  
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(18),
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width :0}
+}

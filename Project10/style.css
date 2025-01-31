@@ -1,0 +1,123 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background: black;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 40vmin; /* Use vmin to ensure a consistent circle */
+    height: 40vmin; /* Use vmin to ensure the aspect ratio remains 1:1 */
+    background-color: rgb(32, 39, 45);
+    border-radius: 50%; /* Ensures a perfect circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 10px rgba(31, 5, 178, 0.8),
+        -1px -2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.num{
+    position: absolute;
+color:aliceblue;
+inset:20px;
+text-align: center;
+transform: rotate(calc(30deg*var(--v)));
+}
+.num b{
+    transform: rotate(calc(-30deg*var(--v)));
+    display: inline-block;
+    font-size: 25px;
+}
+
+.dot{
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    background: #000;
+    border-radius: 50%;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.8),
+    -1px -2px 10px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.digi-clock{
+    position:absolute;
+    width: 38%;
+    height: 13%;
+    background-color: #000;
+    bottom:27%;
+    background: transparent;
+    box-shadow:inset 1px 2px 10px rgba(0, 0, 0, 0.8),
+    -1px -2px 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    font-size: 22px;
+    color: white;
+}
+.dh{
+    color:rgb(72, 196, 218);
+
+}
+.dm{
+    color:rgb(72,218, 164);
+}
+.ds{
+    color: blueviolet;
+}
+
+.hour-hand, .min-hand, .second-hand{
+   position: absolute;
+   background: #000;
+   border-radius: 20px;
+   transform-origin: bottom;
+}
+
+.hour-hand{
+    width: 1%;
+    height:30%;
+    top: 20.5%;
+    background-color: rgb(72, 196, 218);
+    
+}
+
+.min-hand{
+    width: 1%;
+    height:35%;
+    top: 15.5%;
+   background-color:rgb(72,218, 164); ;
+    
+}
+
+.second-hand{
+    width: 1%;
+    height:40%;
+    top: 10.5%;
+    background-color:blueviolet ;
+    
+}
+@media(max-width:760px){
+    .clock{
+        width: 80vw;
+        height: 80vw;
+    }
+    .digi-clock{
+        font-size: 4vw;
+    }
+}

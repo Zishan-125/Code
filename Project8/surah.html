@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surah.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  referrerpolicy="no-referrer" />
+
+    <title>Surah</title>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar flex-space-around">
+            <ul >
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+<li><a href="#surah"><i class="fa-solid fa-book-open"></i> Surah</a></li>
+<li><a href="naat.html"><i class="fa-solid fa-music"></i> Nashid</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="actions__search">
+        <input type="text" id="search-item" placeholder="Search surah" 
+        onkeyup="search()"/>
+        <button class="btn">
+         <i class="fa-sharp fa-solid fa-magnifying-glass">
+
+         </i>
+        </button>
+      </div>
+
+      <div class="container">
+
+        <div class="Quran-Reciter">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left">
+            
+                    </i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="R (2).jpg" class="img1">
+            <h1 class="Surah__Name">001.Surah - Fatiha</h1>
+            <p>Reciting : Quari Al Ossi</p>
+            
+            <audio  id="surah">
+                <source src="001.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+             <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward" ></i></div>
+             </div>
+                   </div>
+
+
+                   <div class="Quran-Reciter">
+                    <nav>
+                        <div class="circle">
+                            <i class="fa-solid fa-angle-left">
+                    
+                            </i>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </nav>
+                    <img src="R (2).jpg" class="img1">
+                    <h1 class="Surah__Name">108.Surah - Kausar</h1>
+                    <p>Reciting : Quari Al Ossi</p>
+                    
+                    <audio  id="surah">
+                        <source src="108.mp3" type="audio/mpeg">
+                    </audio>
+                    <input type="range" value="0" id="progress">
+                     <div class="controls">
+                        <div><i class="fa-solid fa-backward"></i></div>
+                        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                        <div><i class="fa-solid fa-forward" ></i></div>
+                     </div>
+                           </div>
+
+      <div class="Quran-Reciter">
+                <nav>
+                    <div class="circle">
+                        <i class="fa-solid fa-angle-left">
+                
+                        </i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <img src="R (2).jpg" class="img1">
+                <h1 class="Surah__Name">106.Surah - Quraish</h1>
+                <p>Reciting : Quari Al Ossi</p>
+                
+                <audio  id="surah">
+                    <source src="106.mp3" type="audio/mpeg">
+                </audio>
+                <input type="range" value="0" id="progress">
+                 <div class="controls">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                    <div><i class="fa-solid fa-forward" ></i></div>
+                 </div>
+                       </div>
+
+
+                       <div class="Quran-Reciter">
+                        <nav>
+                            <div class="circle">
+                                <i class="fa-solid fa-angle-left">
+                        
+                                </i>
+                            </div>
+                            <div class="circle">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </nav>
+                        <img src="R (2).jpg" class="img1">
+                        <h1 class="Surah__Name">105.Surah - Fil</h1>
+                        <p>Reciting : Quari Al Ossi</p>
+                        
+                        <audio  id="surah">
+                            <source src="105.mp3" type="audio/mpeg">
+                        </audio>
+                        <input type="range" value="0" id="progress">
+                         <div class="controls">
+                            <div><i class="fa-solid fa-backward"></i></div>
+                            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                            <div><i class="fa-solid fa-forward" ></i></div>
+                         </div>
+                               </div> 
+
+
+                               <div class="Quran-Reciter">
+                                <nav>
+                                    <div class="circle">
+                                        <i class="fa-solid fa-angle-left">
+                                
+                                        </i>
+                                    </div>
+                                    <div class="circle">
+                                        <i class="fa-solid fa-bars"></i>
+                                    </div>
+                                </nav>
+                                <img src="R (2).jpg" class="img1">
+                                <h1 class="Surah__Name">111.Surah - Al-Masad</h1>
+                                <p>Reciting : Quari Al Ossi</p>
+                                
+                                <audio  id="surah">
+                                    <source src="111.mp3" type="audio/mpeg">
+                                </audio>
+                                <input type="range" value="0" id="progress">
+                                 <div class="controls">
+                                    <div><i class="fa-solid fa-backward"></i></div>
+                                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                    <div><i class="fa-solid fa-forward" ></i></div>
+                                 </div>
+                                       </div> 
+
+
+                                       <div class="Quran-Reciter">
+                                        <nav>
+                                            <div class="circle">
+                                                <i class="fa-solid fa-angle-left">
+                                        
+                                                </i>
+                                            </div>
+                                            <div class="circle">
+                                                <i class="fa-solid fa-bars"></i>
+                                            </div>
+                                        </nav>
+                                        <img src="R (2).jpg" class="img1">
+                                        <h1 class="Surah__Name">112.Surah - Al-Ikhlas  </h1>
+                                        <p>Reciting : Quari Al Ossi</p>
+                                        
+                                        <audio  id="surah">
+                                            <source src="112.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <input type="range" value="0" id="progress">
+                                         <div class="controls">
+                                            <div><i class="fa-solid fa-backward"></i></div>
+                                            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                                            <div><i class="fa-solid fa-forward" ></i></div>
+                                         </div>
+                                               </div>
+
+                                            </div>
+
+
+                     <!--.footer starts here.--> 
+    <footer class="footer  flex-space-around">
+        <div class="flex-space-around">
+           <label for="subscribe">Subscribe to Newsletter: </label>
+           <input type="email" id="subscribe"
+           name="subscribe" class="footer__input"
+           placeholder="Your Email Address"/>
+           <button class="btn btn-subscribe">subscribe</button>
+        </div>
+        <div>
+            <p>Copyright &copy; <span id="currentYear"></span> by Zishan IT Center. All Rights Reserved.</p>
+
+
+        </div>
+      </footer>
+      <!--.footer ends here.--> 
+      <script src="script.js"></script>
+</body>
+</html>

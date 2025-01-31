@@ -1,0 +1,229 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #1c1f26, #1a1a2e);
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  
+  .code-editor-container {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 2px;
+    overflow: auto;
+  }
+  
+  
+  .code-editor {
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(145deg, #1f2733, #232936);
+    border-radius: 20px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8), -4px -4px 10px rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  .head-editor {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(135deg, #1e1f29, #1b1e27);
+    border-bottom: 2px solid #3a3f51;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .left-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .left-head span {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .right-head {
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .right-head:hover {
+    transform: scale(1.2);
+    color: #ff9800;
+  }
+  
+  /* Code Editor Textarea */
+  .code-editor textarea {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: #d4d4d4;
+    outline: none;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Fira Code', monospace;
+    resize: none;
+    line-height: 1.5;
+    caret-color: #ff9800;
+    scrollbar-width: thin;
+    scrollbar-color: #ff9800 transparent;
+  }
+  
+  /* Selection Styling */
+  textarea::selection {
+    background: rgba(255, 152, 0, 0.5);
+    color: #000;
+  }
+  
+  /* Output Container */
+  .output-container {
+    width: 100%;
+    height: 30%;
+    position: fixed;
+    bottom: 0;
+   
+    background: linear-gradient(145deg, #232831, #1c2027);
+    border-top: 2px solid #3a3f51;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+    transition: height 0.5s ease;
+  }
+  
+  .output-head {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  #save,
+  #up {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #save:hover,
+  #up:hover {
+    transform: scale(1.2);
+    color: #ff9800;
+  }
+  
+  #output {
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: auto;
+    background: #121212;
+    color: #d4d4d4;
+    background-color:rgba(245, 245, 245, 0.879);
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+    line-height: 1.5;
+    scrollbar-width: thin;
+    scrollbar-color: #ff9800 transparent;
+  }
+  
+  /* Fullscreen Output Mode */
+  .output-full-active {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #121212;
+    border-radius: 0;
+  }
+  
+  /* Selection Colors for Different Inputs */
+  .html-input::selection {
+    background-color: rgba(255, 87, 34, 0.5);
+  }
+  
+  .js-input::selection {
+    background-color: rgba(255, 235, 59, 0.5);
+    color: #000;
+  }
+  
+  /* Subtle Animations */
+  .code-editor:hover {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.8), -6px -6px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  textarea {
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  textarea:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+  }
+
+
+  header {
+    text-align: center;
+    margin-bottom: 0px;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; 
+    height: 80px;
+}
+
+.tagline {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color: #007BFF;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-family: 'Arial', sans-serif;
+}
+
+.credit {
+    font-size: 0.9rem;  
+    color: #ecf0f3ec;  
+    font-family: 'Arial', sans-serif;
+    text-align: center;  
+    margin: 3px 0; 
+    letter-spacing: 0.5px;  
+}
+
+#currentYear {
+    font-weight: bold; 
+    color: #b4a54de2;  
+}
+
+
+
+  

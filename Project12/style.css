@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 38, 44);
+}
+.container{
+    width: 80vw;
+    height: 90vh;
+    max-width: 450px;
+    background-color: rgb(31, 38, 44);
+    padding: 2px 20px;
+    position: relative;
+}
+.game{
+    width: 100%;
+    height: 55%;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    gap: 5px;
+}
+
+.boxes{
+    background-color: transparent;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.8),
+    -2px -25px 10px rgba(0, 0, 0, 0.8);
+    
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(28, 28, 167);
+   color:  rgb(53, 125, 137);
+   border: none;
+   cursor: pointer;
+}
+.hover:hover{
+    box-shadow:inset 2px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.turn{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose{
+    width: 40%;
+    height: 50%;
+    background: transparent;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.8),
+    -2px -25px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    display: flex;
+}
+
+.turn1 ,.turn2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+.box1{
+    border-radius: 10px 0px 0px 0px;
+}
+.box3{
+    border-radius: 0px 10px 0px 0px;
+}
+.box7{
+    border-radius: 0px 0px 0px 10px;
+}
+.box9{
+    border-radius: 0px 0px 10px 0px;
+}
+
+.turn1{
+    font-size: 40px;
+    color: rgb(28, 28, 167);
+}
+.turn2{
+    font-size: 40px;
+    color: rgb(53, 125, 137);
+}
+
+.b-s{
+    box-shadow:inset 2px 5px 10px rgba(0, 0, 0, 0.8);
+    font-size: small;
+}
+
+.msg{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    gap: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+.btn{
+    position: absolute;
+    bottom: 20px;
+    width: 100px;
+    padding:10px 5px;
+    background: transparent;
+    border: none;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.8),
+    -2px -25px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.8);
+    color: rgba(240, 248, 255, 0.438);
+    font-size: small;
+}
+
+#ng{
+    right:20px;
+}
+
+.highlight {
+    background-color: lightgreen;
+}

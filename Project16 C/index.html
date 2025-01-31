@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <div class="logo-container">
+           
+            <img src="logo.webp" alt="Code Editor Logo" class="logo">
+            <p class="tagline">JakaCode – Simplify, Create, Innovate</p>
+            <p class="credit">Copyright &copy; <span id="currentYear"></span> by Zishan IT Center. All Rights Reserved.</p>
+        </div>
+       
+    </header>
+
+    <div class="code-editor-container">
+        <div class="code-editor html-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="html-logo-png-3.png" width="30px">
+                    <span>HTML</span>
+                </div>
+                <div class="right-head">
+                    <i class="fa-regular fa-copy copy copy1"></i>
+                </div>
+            </div>
+            <textarea class="html-input" spellcheck="false"></textarea>
+        </div>
+
+        <div class="code-editor css-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="CSS.jpg" width="30px">
+                    <span>CSS</span>
+                </div>
+                <div class="right-head">
+                    <i class="fa-regular fa-copy copy copy2"></i>
+                </div>
+            </div>
+            <textarea class="css-input" spellcheck="false"></textarea>
+        </div>
+
+        <div class="code-editor js-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="JS.jpg" width="30px">
+                    <span>JS</span>
+                </div>
+                <div class="right-head">
+                    <i class="fa-regular fa-copy copy copy3"></i>
+                </div>
+            </div>
+            <textarea class="js-input" spellcheck="false"></textarea>
+        </div>
+    </div>
+
+    <div class="output-container">
+        <div class="output-head">
+            <span>OUTPUT</span>
+            <i class="fa-regular fa-floppy-disk" id="save"></i>
+            <i class="fa-regular fa-circle-up" id="up"></i>
+        </div>
+        <iframe id="output"></iframe>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+

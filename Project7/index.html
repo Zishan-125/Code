@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zishan's Live Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="head">
+        <h1 class="headline">Live Weather App</h1>
+    </div>
+    
+    
+       
+        <div class="card">
+            
+            <div class="search">
+                <input type="text" id="city-input" placeholder="Enter city name" spellcheck="false">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+    
+            <div class="weather">
+                <img src="weather1.png" class="weather-icon" id="weather-icon">
+                <h1 class="temp" id="temp">--°C</h1>
+                <h2 class="city" id="city">City Name</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="humidity-icon.png" class="weather-icon">
+                        <div>
+                            <p class="humidity" id="humidity">--%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+    
+                    <div class="col">
+                        <img src="wind.png" class="weather-icon">
+                        <div>
+                            <p class="wind" id="wind-speed">-- km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
